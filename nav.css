@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: grey url(./wall.png) no-repeat center center;
+    background-size: cover;
+}
+main {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainWrapper{
+    display: inline-block;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+
+kbd{
+    border: 1px solid #bbb;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    position:relative;
+}
+
+kbd > button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+kbd:hover > button {
+    display: inline-block;
+}
+
+
+#mainWrapper > div > kbd:first-child{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+#mainWrapper > div > kbd:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#mainWrapper > div:nth-child(2) {
+    margin-left: -38px;
+}
+
+#mainWrapper > div:nth-child(3) {
+    margin-left: -112px;
+}
+
+#mainWrapper .row {
+    margin: 20px 0;
+}
+
+
+.keyStyle{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+	border: 1px solid #373737; color: #C5C5C5; 
+    border-radius: 6px; 
+	box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808; 
+	font-size: 16px; 
+    font-family: Helvetica;
+    position: relative;
+}
+.keyStyle span {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+.keyStyle img{
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 1em;
+    height: 1em;
+}
